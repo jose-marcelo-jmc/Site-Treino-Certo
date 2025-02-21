@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background: linear-gradient(45deg, #40010D, #080708, #071a25,  #40010D);
+    height: 150vh;
+    margin: 0;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-family: "Fugaz One", serif;
+    font-weight: 400;
+    font-size: 10em;
+    font-style: normal;
+    color: #F0F3F5;
+    text-align: center;
+    margin-top: 1600px;
+    margin-bottom: 50px;
+}
+h2{
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 350px;
+    font-size: 3.5em;
+    color: #FFC745;
+}
+
+a > button {
+    text-decoration: underline red;
+    color: #F0F3F5;
+    text-align: center;
+    font-family: "Rowdies", serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: normal;
+    background-color: transparent;
+    border: none;  
+    margin-left: 120px;
+    margin-top: 1em;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+div#peito > a > button {
+    color: #F0F3F5;
+    text-align: center;
+    font-family: "Rowdies", serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: normal;
+    background-color: transparent;
+    border: none;  
+    margin-left: 160px;
+    margin-top: 1em;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+div#costas > a >  button {
+    color: #F0F3F5;
+    text-align: center;
+    font-family: "Rowdies", serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: normal;
+    background-color: transparent;
+    border: none;  
+    margin-left: 145px;
+    margin-top: 1em;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.4); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 490px);
+    grid-gap: 400px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+img {
+    width: 430px;
+    height: 430px;
+    object-fit: cover;
+    transition: transform 0.30s ease;
+}
+
+div#abdomen > img {
+    margin-left: 115px;
+    width: 430px;
+    height: 430px;
+}
+div#peito > img {
+    margin-left: 10px;
+    width: 430px;
+    height: 430px;
+}
+
+div#costas > img {
+    width: 530px;
+    height: 430px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(45deg, #40010D, #080708, #040F16,  #40010D);
+        height: 180vh;
+        margin: 0;
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    h1{
+        padding-top: 2000px;
+        font-size: 4em;
+        margin-top: 200px;
+    }
+
+    h2{
+        font-size: 1.77em;
+    }
+
+    .menu {
+        display: list-item;
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    button{
+        font-size: 2em;
+        margin-top: 10px;
+    }
+
+    div {
+        margin-bottom: 4em
+    }
+
+    div#costas > img {
+        margin-left: 70px;
+    }
+    div#costas > a > button {
+        margin-right: 120px;
+    }
+    div#braco > a > button {
+        margin-right: 100px;
+    }
+    div#abdomen > img {
+        margin-left: 180px;
+    }
+    div#abdomen > a > button {
+        margin-right: 70px;
+    }
+    div#peito > a > button {
+        margin-right: 110px;
+    }
+}
